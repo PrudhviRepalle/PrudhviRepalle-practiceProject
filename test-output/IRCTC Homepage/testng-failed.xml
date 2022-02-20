@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="classes" data-provider-thread-count="4" name="Failed suite [IRCTC Homepage]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="classes" name="Regression(failed)">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testcases.TC005">
+        <methods>
+          <include name="accommodationGSTValidation"/>
+        </methods>
+      </class> <!-- testcases.TC005 -->
+      <class name="testcases.TC001">
+        <methods>
+          <include name="irctcRegistration" invocation-numbers="2 0 1"/>
+        </methods>
+      </class> <!-- testcases.TC001 -->
+      <class name="testcases.TC003">
+        <methods>
+          <include name="ftrSignup"/>
+        </methods>
+      </class> <!-- testcases.TC003 -->
+      <class name="testcases.TC004">
+        <methods>
+          <include name="saloonMandatoryCheck"/>
+        </methods>
+      </class> <!-- testcases.TC004 -->
+      <class name="testcases.TC002">
+        <methods>
+          <include name="accommodations"/>
+        </methods>
+      </class> <!-- testcases.TC002 -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [IRCTC Homepage] -->
